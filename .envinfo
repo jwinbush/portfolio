@@ -1,0 +1,7 @@
+  System:
+    OS: Windows 10 10.0.18362
+    CPU: (8) x64 Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
+  Binaries:
+    Node: 12.18.3 - C:\Program Files\nodejs\node.EXE
+    Yarn: 1.21.1 - C:\Program Files (x86)\Yarn\bin\yarn.CMD
+    npm: 6.14.6 - C:\Program Files\nodejs\npm.CMD
