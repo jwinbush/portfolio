@@ -18,7 +18,7 @@ export default function Projects() {
       link: "https://github.com/jwinbush",
     },
   ];
-
+ 
   return (
     <div className="pt-32  grid-cols-2">
       {list.map(({ title, videoFile, link }) => (

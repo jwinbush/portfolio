@@ -25,7 +25,7 @@ export const Video = (props) => {
             src="${src}"   
             id="${id}"
           />`
-        }}
+        }} 
         />
     );
 }

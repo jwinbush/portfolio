@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
@@ -18,7 +19,7 @@ export default function Contact() {
         </p>
         <form action="#" className="space-y-8">
           <div>
-            <label
+            <label 
               for="email"
               className="block mb-2 text-sm font-medium text-white dark:text-gray-300"
             >
@@ -62,13 +63,13 @@ export default function Contact() {
             ></textarea>
           </div>
 
-          <a
-            href="mailto:jawonwinbush@gmail.com"
+          <Link
+            to="mailto:jawonwinbush@gmail.com"
             target="_blank"
             className=" text-sm font-medium text-center rounded-md text-white bg-gradient-to-r from-cyan-400 via-emerald-300 to-cyan-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-400 dark:focus:ring-cyan-800 shadow-lg hover:shadow-cyan-400/50 animate-text px-4 py-3"
           >
             Send message
-          </a>
+          </Link>
         </form>
       </div>
     </section>

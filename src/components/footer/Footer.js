@@ -7,7 +7,7 @@ export default function Footer() {
       <span className="text-sm text-white sm:text-center">
         © 2023
         <Link to="/">JW</Link>
-         All Rights Reserved.
+         All Rights Reserved. 
       </span>
       <ul className="flex flex-wrap items-center mt-3 text-sm text-white sm:mt-0">
         <li>

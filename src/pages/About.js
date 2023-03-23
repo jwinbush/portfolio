@@ -5,7 +5,7 @@ export default function About() {
         <section className="h-screen w-full bg-black">
           <div className="grid grid-cols-6">
             <img src="" alt="" />
-          </div>
+          </div> 
          
             
         </section>
