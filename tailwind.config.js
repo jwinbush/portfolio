@@ -18,10 +18,10 @@ module.exports = {
                     },
                 },
             },
-            fontFamily: {
-                Americana: ["Americana"],
+            // fontFamily: {
+            //     Americana: ["Americana"],
 
-            },
+            // },
         },
     },
     plugins: [],
