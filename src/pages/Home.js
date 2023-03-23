@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import computer from "../assets/videos/cube.mp4";
+import car from "../assets/videos/OdysseyRentals.mp4";
+import movie from "../assets/videos/cineFilms.mp4";
+import spotify from "../assets/videos/Spotify.mp4";
 import { Video } from "../components/video/Video";
 
 export default function Home() {
@@ -9,7 +12,8 @@ export default function Home() {
       <section
         className="bg-black w-full h-screen bg-top bg-cover duration-75 pt-20 lg:pt-36"
         style={{
-          backgroundImage: "url('https://images.wallpapersden.com/image/download/black-minimalist-hex_bW1paWiUmZqaraWkpJRmbmdlrWZlbWU.jpg')",
+          backgroundImage:
+            "url('https://images.wallpapersden.com/image/download/black-minimalist-hex_bW1paWiUmZqaraWkpJRmbmdlrWZlbWU.jpg')",
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -18,20 +22,23 @@ export default function Home() {
       >
         <div className="grid max-w-full px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7 lg:pl-10">
-          <div className="flex lg:col-span-5 lg:hidden max-w-[700px] mr-6 rounded" data-te-ripple-init>
-            <Video
-              src={computer}
-              id="myVideo1"
-              muted={true}
-              autoplay={true}
-              loop={true}
-            />
-          </div>
+            <div
+              className="flex lg:col-span-5 lg:hidden max-w-[700px] mr-6 rounded"
+              data-te-ripple-init
+            >
+              <Video
+                src={computer}
+                id="myVideo1"
+                muted={true}
+                autoplay={true}
+                loop={true}
+              />
+            </div>
             <p className="max-w-2xl mb-2 text-white md:text-lg lg:text-6xl font-bold dark:text-gray-400">
               Welcome, I'm
             </p>
             <h1
-              className="max-w-2xl pb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-8xl bg-gradient-to-r bg-clip-text  text-transparent 
+              className="max-w-3xl pb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-8xl bg-gradient-to-r bg-clip-text  text-transparent 
               from-cyan-400 via-emerald-300 to-cyan-400
               animate-text"
             >
@@ -41,23 +48,23 @@ export default function Home() {
               Self-motivated Software Developer who brings a creative and
               solution driven mindset to every team and project. Passionate
               about writing clean code that is reusable. My objective is to
-              obtain an internship working as a Software Developer to develop,
-              maintain, and design applications.
+              obtain a full-time position working as a Software Developer to
+              develop, maintain, and design applications.
             </p>
             <Link
-              href="#"
+              to="/contact"
               className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-full text-white bg-gradient-to-r from-black to-gray-600 hover:bg-gradient-to-br shadow-lg hover:shadow-gray-600/50 animate-text"
             >
               Contact Me
             </Link>
             <Link
-              href="#"
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center rounded-full text-white bg-gradient-to-r from-cyan-400 via-emerald-300 to-cyan-400 hover:bg-gradient-to-br shadow-lg hover:shadow-cyan-500/50 animate-text"
+              to="/about"
+              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center rounded-full text-black bg-gradient-to-r from-cyan-400 via-emerald-300 to-cyan-400 hover:bg-gradient-to-br shadow-lg hover:shadow-cyan-500/50 animate-text"
             >
               Learn More
               <svg
                 className="w-5 h-5 ml-2 -mr-1"
-                fill="currentColor" 
+                fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -69,7 +76,10 @@ export default function Home() {
               </svg>
             </Link>
           </div>
-          <div className="hidden lg:col-span-5 lg:flex max-w-[700px] mr-6 rounded" data-te-ripple-init>
+          <div
+            className="hidden lg:col-span-5 lg:flex max-w-[700px] mr-6 rounded"
+            data-te-ripple-init
+          >
             <Video
               src={computer}
               id="myVideo1"
@@ -80,6 +90,30 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="grid lg:grid-cols-3 px-2 gap-2 bg-black">
+        <div className="rounded" data-te-ripple-init>
+          <Video
+            src={movie}
+            id="Car"
+            muted={true}
+            autoplay={true}
+            loop={true}
+          />
+        </div>
+        <div className="rounded" data-te-ripple-init>
+          <Video
+            src={spotify}
+            id="Car"
+            muted={true}
+            autoplay={true}
+            loop={true}
+          />
+        </div>
+        <div className="rounded" data-te-ripple-init>
+          <Video src={car} id="Car" muted={true} autoplay={true} loop={true} />
+        </div>
+      </div>
 
       {/* TAILWIND CSS CAROUSEL START
       <div
