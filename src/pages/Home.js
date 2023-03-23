@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import computer from "../assets/videos/cube.mp4";
-import { Video } from "../components/VideoHero/Video";
+import { Video } from "../components/video/Video";
+
 export default function Home() {
   return (
     <div>
