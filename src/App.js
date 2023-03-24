@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Preloader from "./components/preload/Pre";
 import { useEffect, useState } from "react";
+import ScrollToTop from "./components/scroll/ScrollToTop";
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -21,10 +22,11 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <BrowserRouter>
+    <BrowserRouter>
       <Preloader load={load} />
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Header />
+        <ScrollToTop />
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/about" exact element={<About />} />
@@ -32,8 +34,8 @@ function App() {
           <Route path="/contact" exact element={<Contact />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

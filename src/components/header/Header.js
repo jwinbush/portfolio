@@ -39,13 +39,13 @@ export default function Header() {
           <div className="flex items-center lg:order-2">
             <a
               href="https://github.com/jwinbush" target={`_blank`}
-              className="bg-gradient-to-r from-black to-gray-700 hover:bg-gradient-to-br shadow-lg hover:shadow-gray-600/50 animate-text font-medium rounded-full text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2"
+              className="bg-gradient-to-br from-black to-gray-700 hover:bg-gradient-to-br shadow-lg hover:shadow-gray-600/50 animate-text font-medium rounded-md text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2"
             >
              <FaGithub size={25} color="white"/>
             </a>
             <Link 
               to="#" 
-              className="flex rounded-full text-black bg-gradient-to-r from-cyan-400 via-emerald-300 to-cyan-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-400 dark:focus:ring-cyan-800 shadow-lg hover:shadow-cyan-400/50 animate-text px-3 py-2"
+              className="flex rounded-md text-black bg-gradient-to-br from-cyan-400 via-emerald-300 to-cyan-400 hover:bg-gradient-to-br  shadow-lg shadow-cyan-400/60 animate-text px-3 py-2"
             >
             <FaFilePdf className="mr-1 mt-1"/>Resume
             </Link>
@@ -53,7 +53,7 @@ export default function Header() {
             <button
               data-collapse-toggle="mobile-menu-2"
               type="button"
-              className="inline-flex items-center p-2 ml-1 text-sm text-white rounded-full lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 ml-1 text-sm text-white rounded-md lg:hidden hover:bg-gray-100 "
               aria-controls="mobile-menu-2"
               aria-expanded="false"
             >
@@ -89,10 +89,19 @@ export default function Header() {
             id="mobile-menu-2"
           >
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+            <li>
+                <Link
+                  to="/"
+                  className=" py-2 pr-4 pl-3 text-white rounded-md  lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                  aria-current="page"
+                >
+                  Home
+                </Link>
+              </li>
               <li>
                 <Link
                   to="/about"
-                  className=" py-2 pr-4 pl-3 text-white rounded  lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                  className=" py-2 pr-4 pl-3 text-white rounded-md  lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
                   aria-current="page"
                 >
                   About
@@ -101,7 +110,7 @@ export default function Header() {
               <li>
                 <Link
                   to="/portfolio"
-                  className=" py-2 pr-4 pl-3 text-white rounded  lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                  className=" py-2 pr-4 pl-3 text-white rounded-md  lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
                   aria-current="page"
                 >
                   Portfolio
@@ -110,7 +119,7 @@ export default function Header() {
               <li>
                 <Link
                   to="/contact"
-                  className=" py-2 pr-4 pl-3 text-white rounded  lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                  className=" py-2 pr-4 pl-3 text-white rounded-md  lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
                   aria-current="page"
                 >
                   Contact

@@ -6,11 +6,11 @@ export default function Contact() {
     <section className="bg-black h-screen pt-14">
       <div className="py-8 lg:py-16 mx-auto max-w-screen-md">
         <h1
-          className="mb-4 text-4xl text-center font-extrabold lg:text-6xl bg-gradient-to-r bg-clip-text text-transparent 
+          className="mb-4 text-4xl text-center font-extrabold lg:text-6xl bg-gradient-to-br bg-clip-text text-transparent 
               from-cyan-400 via-emerald-300 to-cyan-400
               animate-text"
         >
-          Get in touch
+          Get in touch.
         </h1>
         <p className="mb-8 lg:mb-16 font-light text-center text-white dark:text-gray-400 sm:text-xl">
           If you wanna get in touch, talk to me about a project collaboration,
@@ -66,7 +66,7 @@ export default function Contact() {
           <Link
             to="mailto:jawonwinbush@gmail.com"
             target="_blank"
-            className=" text-sm font-medium text-center rounded-md text-white bg-gradient-to-r from-cyan-400 via-emerald-300 to-cyan-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-400 dark:focus:ring-cyan-800 shadow-lg hover:shadow-cyan-400/50 animate-text px-4 py-3"
+            className=" text-sm font-medium text-center rounded-md text-white bg-gradient-to-br from-cyan-400 via-emerald-300 to-cyan-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-400 dark:focus:ring-cyan-800 shadow-lg hover:shadow-cyan-400/50 animate-text px-4 py-3"
           >
             Send message
           </Link>
