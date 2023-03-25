@@ -9,17 +9,7 @@ export default function Home() {
   return (
     <div>
       {/* HERO SECTION */}
-      <section
-        className="bg-black w-full h-screen bg-top bg-cover duration-75 pt-20 lg:pt-36"
-        style={{
-          backgroundImage:
-            "url('https://images.wallpapersden.com/image/download/black-minimalist-hex_bW1paWiUmZqaraWkpJRmbmdlrWZlbWU.jpg')",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          // backgroundAttachment:'fixed'
-        }}
-      >
+      <section className="bg-black w-full h-screen bg-top bg-cover duration-75 pt-20 lg:pt-36">
         <div className="grid max-w-full px-4 pt-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7 lg:pl-10">
             <div
@@ -45,10 +35,10 @@ export default function Home() {
               Jawon Winbush<span className="text-white">.</span>
             </h1>
             <p className="max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl dark:text-gray-400">
-              Software Developer who brings a creative and
-              solution driven mindset to every team and project. Passionate
-              about writing clean code that is reusable. My objective is
-              to develop, maintain, and design applications that make a difference.
+              Software Developer who brings a creative and solution driven
+              mindset to every team and project. Passionate about writing clean
+              code that is reusable. My objective is to develop, maintain, and
+              design applications that make a difference.
             </p>
             <Link
               to="/contact"
@@ -93,7 +83,12 @@ export default function Home() {
       <section className="bg-black">
         <div className="grid lg:grid-cols-3 px-2 gap-2 text-center">
           <div className="rounded" data-te-ripple-init>
-            <video src={movie} className="max-h-[300px]" controls autoplay></video>
+            <video
+              src={movie}
+              className="max-h-[300px]"
+              controls
+              autoplay
+            ></video>
             <div className="p-5 bg-gradient-to-b from-black to-gray-900">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
                 CineFilms ⭐️
@@ -128,7 +123,12 @@ export default function Home() {
           </div>
 
           <div className="rounded" data-te-ripple-init>
-            <video src={car} className="max-h-[300px]" controls autoplay></video>
+            <video
+              src={car}
+              className="max-h-[300px]"
+              controls
+              autoplay
+            ></video>
             <div className="p-5 bg-gradient-to-b from-black to-gray-900">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
                 Odyssey Rentals ⭐️
@@ -162,7 +162,12 @@ export default function Home() {
             </div>
           </div>
           <div className="rounded" data-te-ripple-init>
-            <video src={spotify} className="max-h-[300px]" controls autoplay></video>
+            <video
+              src={spotify}
+              className="max-h-[300px]"
+              controls
+              autoplay
+            ></video>
             <div className="p-5 bg-gradient-to-b from-black to-gray-900">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
                 Spotify Clone ⭐️
