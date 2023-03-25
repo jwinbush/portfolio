@@ -20,7 +20,7 @@ export default function Home() {
           // backgroundAttachment:'fixed'
         }}
       >
-        <div className="grid max-w-full px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div className="grid max-w-full px-4 pt-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7 lg:pl-10">
             <div
               className="flex lg:col-span-5 lg:hidden max-w-[700px] mr-6 rounded"
@@ -34,22 +34,21 @@ export default function Home() {
                 loop={true}
               />
             </div>
-            <p className="max-w-2xl mb-2 text-white md:text-lg lg:text-6xl font-bold dark:text-gray-400">
-              Welcome. I'm
+            <p className="inline-flex max-w-2xl mb-2 text-white md:text-lg lg:text-6xl font-bold dark:text-gray-400">
+              Welcome, I'm
             </p>
             <h1
-              className="max-w-3xl pb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-8xl bg-gradient-to-r bg-clip-text  text-transparent 
+              className="inline-flex max-w-3xl pb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-8xl bg-gradient-to-r bg-clip-text  text-transparent 
               from-cyan-400 via-emerald-300 to-cyan-400
               animate-text"
             >
-              Jawon Winbush
+              Jawon Winbush<span className="text-white">.</span>
             </h1>
             <p className="max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl dark:text-gray-400">
-              Self-motivated Software Developer who brings a creative and
+              Software Developer who brings a creative and
               solution driven mindset to every team and project. Passionate
-              about writing clean code that is reusable. My objective is to
-              obtain a full-time position working as a Software Developer to
-              develop, maintain, and design applications.
+              about writing clean code that is reusable. My objective is
+              to develop, maintain, and design applications that make a difference.
             </p>
             <Link
               to="/contact"
@@ -94,8 +93,8 @@ export default function Home() {
       <section className="bg-black">
         <div className="grid lg:grid-cols-3 px-2 gap-2 text-center">
           <div className="rounded" data-te-ripple-init>
-            <video src={movie} controls autoplay></video>
-            <div className="p-5 bg-gradient-to-br from-gray-900 via-black to-gray-900">
+            <video src={movie} className="max-h-[300px]" controls autoplay></video>
+            <div className="p-5 bg-gradient-to-b from-black to-gray-900">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
                 CineFilms ⭐️
               </h5>
@@ -129,8 +128,8 @@ export default function Home() {
           </div>
 
           <div className="rounded" data-te-ripple-init>
-            <video src={car} controls autoplay></video>
-            <div className="p-5 bg-gradient-to-br from-gray-900 via-black to-gray-900">
+            <video src={car} className="max-h-[300px]" controls autoplay></video>
+            <div className="p-5 bg-gradient-to-b from-black to-gray-900">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
                 Odyssey Rentals ⭐️
               </h5>
@@ -163,8 +162,8 @@ export default function Home() {
             </div>
           </div>
           <div className="rounded" data-te-ripple-init>
-            <video src={spotify} controls autoplay></video>
-            <div className="p-5 bg-gradient-to-br from-gray-900 via-black to-gray-900">
+            <video src={spotify} className="max-h-[300px]" controls autoplay></video>
+            <div className="p-5 bg-gradient-to-b from-black to-gray-900">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
                 Spotify Clone ⭐️
               </h5>

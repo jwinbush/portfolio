@@ -28,8 +28,8 @@
     width: 100%;
     height: 100%;
     z-index: 10000;
-    background-color: #0c0513;
-    background-image: url(./assets/images/rings.svg);
+    background-color: #000000;
+    background-image: url(./assets/videos/loop.gif);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -43,11 +43,93 @@
     height: 100vh;
 }
 
+
+/* --------- */
+
+
+/*  Scroll to top button */
+
+
+/* --------- */
+
 .scroll-to-top {
     z-index: 2000;
 }
 
+
+/* --------- */
+
+
+/*  "All Projects" Button on Home Page */
+
+
+/* --------- */
+
 #button {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+
+/* --------- */
+
+
+/*  Mobile Navbar */
+
+
+/* --------- */
+
+#mobile-menu-2 {
+    color: white;
+    backdrop-filter: blur(8px);
+}
+
+
+/* --------- */
+
+
+/*  Wave animation on About Page */
+
+
+/* --------- */
+
+#wave {
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0deg);
+    }
 }

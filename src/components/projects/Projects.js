@@ -46,7 +46,7 @@ export default function Projects() {
   return (
     <div className="pt-32">
       <h1
-        className="mb-4 text-4xl text-center font-extrabold lg:text-6xl bg-gradient-to-br bg-clip-text text-transparent 
+        className="mb-4 text-4xl text-center font-extrabold lg:text-7xl bg-gradient-to-r bg-clip-text text-transparent 
         from-cyan-400 via-emerald-300 to-cyan-400
         animate-text"
       >

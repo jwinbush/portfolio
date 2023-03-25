@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       updateLoad(false);
-    }, 1300);
+    }, 4000); //loading screen last 5 seconds
 
     return () => clearTimeout(timer);
   }, []);
