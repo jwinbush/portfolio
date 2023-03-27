@@ -6,6 +6,8 @@ import spotify from "../assets/videos/Spotify.mp4";
 import { Video } from "../components/video/Video";
 
 export default function Home() {
+
+
   return (
     <div>
       {/* HERO SECTION */}
@@ -28,7 +30,7 @@ export default function Home() {
               Welcome, I'm
             </p>
             <h1
-              className="inline-flex max-w-3xl pb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-8xl bg-gradient-to-r bg-clip-text  text-transparent 
+              className="lg:inline-flex max-w-3xl pb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-8xl bg-gradient-to-r bg-clip-text  text-transparent 
               from-cyan-400 via-emerald-300 to-cyan-400
               animate-text"
             >

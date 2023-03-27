@@ -263,7 +263,7 @@ export default function About() {
         from-cyan-400 via-emerald-300 to-cyan-400
         animate-text pb-4"
         >
-          My recent creations in Adobe After Effects.
+          My recent work in Adobe After Effects.
         </h2>
         <div
           className="grid lg:grid-cols-2 px-2 gap-2 text-center"
