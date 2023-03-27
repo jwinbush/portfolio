@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import bubble from "../assets/videos/waves.mp4";
+import { Tooltip } from "@material-tailwind/react";
+import marvel from "../assets/videos/LogoAnimation.mp4";
+import porsche from "../assets/videos/PorscheAnimation.mp4";
+
 // import html from "../assets/images/skills/html.svg";
 // import css from "../assets/images/skills/css.svg";
 // import javascript from "../assets/images/skills/javascript.svg";
@@ -8,6 +12,18 @@ import { FaArrowDown } from "react-icons/fa";
 import { Video } from "../components/video/Video";
 
 export default function About() {
+  const tools = [
+    { id: 1, content: "VS Code", name: "devicon-vscode-plain" },
+    { id: 2, content: "Visual Studio", name: "devicon-visualstudio-plain" },
+    { id: 3, content: "PhpStorm", name: "devicon-phpstorm-plain" },
+    { id: 4, content: "Apache", name: "devicon-apache-plain" },
+    {
+      id: 5,
+      content: "Adobe After Effects",
+      name: "devicon-aftereffects-plain",
+    },
+    { id: 6, content: "Adobe Illustrator", name: "devicon-illustrator-plain" },
+  ];
   return (
     <div className="bg-black pt-32 ">
       <h1
@@ -15,7 +31,7 @@ export default function About() {
         from-cyan-400 via-emerald-300 to-cyan-400
         animate-text"
       >
-        More about me.
+        Get to know me.
       </h1>
       {/* HERO SECTION */}
       <section
@@ -48,8 +64,8 @@ export default function About() {
               programming, UX/UI design, and data analytics. A well-organized
               person, problem solver, and independent employee with high
               attention to detail. I'm someone who loves to take on new
-              challenges. In my free time I enjoy playing the piano, drawing,
-              exercising, and getting out of my comfort zone.
+              challenges. In my free time I enjoy playing the piano, using Adobe
+              After Effects, exercising, and getting out of my comfort zone.
             </p>
 
             <Link
@@ -74,23 +90,187 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="pb-6 text-center">
+      <section className="pb-6 text-center h-screen grid lg:grid-cols-2">
+        <div>
+          <h2
+            className=" font-extrabold lg:text-5xl bg-gradient-to-r bg-clip-text text-transparent 
+        from-cyan-400 via-emerald-300 to-cyan-400
+        animate-text pb-4"
+          >
+            Professional Skillset
+          </h2>
+          <div className="flex justify-center px-2 gap-2 text-center text-white pb-8">
+            <div className="p-4 rounded-md shadow-xl shadow-gray-900/70">
+              <div
+                id="languages"
+                className="grid grid-cols-4 lg:gap-10 gap-6 lg:text-9xl text-7xl"
+              >
+                <Tooltip
+                  content="HTML5"
+                  animate={{
+                    mount: { scale: 1, y: 0 },
+                    unmount: { scale: 0, y: 25 },
+                  }}
+                >
+                  <i class="devicon-html5-plain"></i>
+                </Tooltip>
+
+                <Tooltip
+                  content="CSS3"
+                  animate={{
+                    mount: { scale: 1, y: 0 },
+                    unmount: { scale: 0, y: 25 },
+                  }}
+                >
+                  <i class="devicon-css3-plain"></i>
+                </Tooltip>
+
+                <Tooltip
+                  content="TailwindCSS"
+                  animate={{
+                    mount: { scale: 1, y: 0 },
+                    unmount: { scale: 0, y: 25 },
+                  }}
+                >
+                  <i class="devicon-tailwindcss-plain"></i>
+                </Tooltip>
+
+                <Tooltip
+                  content="JavaScript"
+                  animate={{
+                    mount: { scale: 1, y: 0 },
+                    unmount: { scale: 0, y: 25 },
+                  }}
+                >
+                  <i class="devicon-javascript-plain"></i>
+                </Tooltip>
+
+                <Tooltip
+                  content="React"
+                  animate={{
+                    mount: { scale: 1, y: 0 },
+                    unmount: { scale: 0, y: 25 },
+                  }}
+                >
+                  <i class="devicon-react-plain"></i>
+                </Tooltip>
+
+                <Tooltip
+                  content="TypeScript"
+                  animate={{
+                    mount: { scale: 1, y: 0 },
+                    unmount: { scale: 0, y: 25 },
+                  }}
+                >
+                  <i class="devicon-typescript-plain"></i>
+                </Tooltip>
+
+                <Tooltip
+                  content="PHP"
+                  animate={{
+                    mount: { scale: 1, y: 0 },
+                    unmount: { scale: 0, y: 25 },
+                  }}
+                >
+                  <i class="devicon-php-plain"></i>
+                </Tooltip>
+
+                <Tooltip
+                  content="C#"
+                  animate={{
+                    mount: { scale: 1, y: 0 },
+                    unmount: { scale: 0, y: 25 },
+                  }}
+                >
+                  <i class="devicon-csharp-plain"></i>
+                </Tooltip>
+
+                <Tooltip
+                  content="Java"
+                  animate={{
+                    mount: { scale: 1, y: 0 },
+                    unmount: { scale: 0, y: 25 },
+                  }}
+                >
+                  <i class="devicon-java-plain"></i>
+                </Tooltip>
+
+                <Tooltip
+                  content="MySQL"
+                  animate={{
+                    mount: { scale: 1, y: 0 },
+                    unmount: { scale: 0, y: 25 },
+                  }}
+                >
+                  <i class="devicon-mysql-plain"></i>
+                </Tooltip>
+                <Tooltip
+                  content="Python"
+                  animate={{
+                    mount: { scale: 1, y: 0 },
+                    unmount: { scale: 0, y: 25 },
+                  }}
+                >
+                  <i class="devicon-python-plain"></i>
+                </Tooltip>
+                <Tooltip
+                  content="R"
+                  animate={{
+                    mount: { scale: 1, y: 0 },
+                    unmount: { scale: 0, y: 25 },
+                  }}
+                >
+                  <i class="devicon-r-plain"></i>
+                </Tooltip>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2
+            className=" font-extrabold lg:text-5xl bg-gradient-to-r bg-clip-text text-transparent 
+        from-cyan-400 via-emerald-300 to-cyan-400
+        animate-text pb-4"
+          >
+            Tools & Apps
+          </h2>
+          <div className="flex justify-center px-2 gap-2 text-center text-white">
+            <div className="p-4 rounded-md shadow-xl shadow-gray-900/70">
+              <div
+                id="tool"
+                className="grid grid-cols-4 lg:gap-10 gap-6 lg:text-9xl text-7xl"
+              >
+                {tools.map(({ content, name }) => (
+                  <Tooltip
+                    content={content}
+                    animate={{
+                      mount: { scale: 1, y: 0 },
+                      unmount: { scale: 0, y: 25 },
+                    }}
+                  >
+                    <i className={name}></i>
+                  </Tooltip>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="text-center">
         <h2
-          className=" font-extrabold lg:text-6xl bg-gradient-to-r bg-clip-text text-transparent 
+          className=" font-extrabold lg:text-5xl bg-gradient-to-br bg-clip-text text-transparent 
         from-cyan-400 via-emerald-300 to-cyan-400
         animate-text pb-4"
         >
-          Professional Skillset
+          My recent creations in Adobe After Effects.
         </h2>
-        <div className="grid lg:grid-cols-2 px-2 gap-2 text-center text-white">
-          <div className="p-4 rounded-md shadow-xl shadow-gray-900/70">
-            <h1 className="font-bold text-2xl">Languages</h1>
-            <p>.</p>
-          </div>
-          <div className="p-4 rounded-md shadow-xl shadow-gray-900/70">
-          <h1 className="font-bold text-2xl">Tools</h1>
-            <p>.</p>
-          </div>
+        <div
+          className="grid lg:grid-cols-2 px-2 gap-2 text-center"
+          data-te-ripple-init
+        >
+          <video src={marvel} controls autoplay></video>
+          <video src={porsche} controls autoplay></video>
         </div>
       </section>
     </div>

@@ -1,49 +1,55 @@
-        #gradient {
-            background: linear-gradient(270deg, #00ffbf, rgb(0, 238, 255), black, #00ffbf, rgb(0, 238, 255));
-            background-size: 800% 800%;
-            -webkit-animation: AnimationName 10s ease infinite;
-            -moz-animation: AnimationName 10s ease infinite;
-            animation: AnimationName 10s ease infinite;
-        }
-        
-        @-webkit-keyframes AnimationName {
-            0% {
-                background-position: 0% 50%
-            }
-            50% {
-                background-position: 100% 50%
-            }
-            100% {
-                background-position: 0% 50%
-            }
-        }
-        
-        @-moz-keyframes AnimationName {
-            0% {
-                background-position: 0% 50%
-            }
-            50% {
-                background-position: 100% 50%
-            }
-            100% {
-                background-position: 0% 50%
-            }
-        }
-        
-        @keyframes AnimationName {
-            0% {
-                background-position: 0% 50%
-            }
-            50% {
-                background-position: 100% 50%
-            }
-            100% {
-                background-position: 0% 50%
-            }
-        }
-        
-        .shrink {
-            height: 65px;
-            color: white;
-            backdrop-filter: blur(8px);
-        }
+#gradient {
+    background: linear-gradient(270deg, #00ffbf, rgb(0, 238, 255), black, #00ffbf, rgb(0, 238, 255));
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.shrink {
+    height: 65px;
+    color: white;
+    backdrop-filter: blur(8px);
+}
+
+#mobile-menu-2 {
+    color: white;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.392);
+}
