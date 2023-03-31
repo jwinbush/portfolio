@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import Preloader from "./components/preload/Pre";
 import { useEffect, useState } from "react";
 import ScrollToTop from "./components/scroll/ScrollToTop";
+import ResumeNew from "./pages/Resume";
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -32,6 +33,8 @@ function App() {
           <Route path="/about" exact element={<About />} />
           <Route path="/portfolio" exact element={<Portfolio />} />
           <Route path="/contact" exact element={<Contact />} />
+          <Route path="/resume" exact element={<ResumeNew />} />
+
         </Routes>
         <Footer />
       </div>

@@ -65,7 +65,7 @@ export default function Header() {
               <FaGithub size={25} color="white" />
             </a>
             <Link
-              to="#"
+              to="/resume"
               className="flex rounded-md text-black bg-gradient-to-br from-cyan-400 via-emerald-300 to-cyan-400 hover:bg-gradient-to-br  shadow-lg shadow-cyan-400/60 animate-text px-3 py-2"
             >
               <FaFilePdf className="mr-1 mt-1" />
