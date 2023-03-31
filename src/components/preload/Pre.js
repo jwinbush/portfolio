@@ -7,7 +7,7 @@ function Preloader(props) {
     <div id={props.load ? "preloader" : "preloader-none"}>
       
       <img
-        className="absolute animate-pulse top-[40%] lg:left-[47%] left-[50%] w-[50px] lg:w-[100px]"
+        className="absolute animate-pulse top-[40%] left-[47%] w-[50px] lg:w-[100px]"
         src={emerald}
         alt=""
       />

@@ -6,7 +6,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "";
+  "https://raw.githubusercontent.com/jwinbush/newportfolio2023/master/src/assets/pdf/JawonResume2023.pdf";
 
 
 export default function ResumeNew() {
