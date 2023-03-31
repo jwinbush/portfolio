@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import React, { useRef, useEffect } from "react";
 import { FaGithub, FaFilePdf } from "react-icons/fa";
 import $ from "jquery";
+import logo from "../../assets/images/EmeraldLogo.png"
+
+
 export default function Header() {
+
   const headerRef = useRef(null);
 
   useEffect(() => {
@@ -13,6 +17,8 @@ export default function Header() {
         document.documentElement.scrollTop > 100
       ) {
         headerRef.current.classList.add("shrink");
+        headerRef.current.classList.add("mobile-menu-2");
+
       } else {
         headerRef.current.classList.remove("shrink");
       }
@@ -44,9 +50,11 @@ export default function Header() {
               className="mr-3 h-6 sm:h-9"
               alt="Flowbite Logo"
             /> */}
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              Jawon
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+             Jay
             </span>
+            <img src={logo} alt="" width={18} />
+            
           </Link>
           <div className="flex items-center lg:order-2">
             <a
