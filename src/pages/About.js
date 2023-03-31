@@ -124,7 +124,7 @@ export default function About() {
                     unmount: { scale: 0, y: 25 },
                   }}
                 >
-                  <i class="devicon-html5-plain"></i>
+                  <i className="devicon-html5-plain"></i>
                 </Tooltip>
 
                 <Tooltip
@@ -134,7 +134,7 @@ export default function About() {
                     unmount: { scale: 0, y: 25 },
                   }}
                 >
-                  <i class="devicon-css3-plain"></i>
+                  <i className="devicon-css3-plain"></i>
                 </Tooltip>
 
                 <Tooltip
@@ -144,7 +144,7 @@ export default function About() {
                     unmount: { scale: 0, y: 25 },
                   }}
                 >
-                  <i class="devicon-tailwindcss-plain"></i>
+                  <i className="devicon-tailwindcss-plain"></i>
                 </Tooltip>
 
                 <Tooltip
@@ -154,7 +154,7 @@ export default function About() {
                     unmount: { scale: 0, y: 25 },
                   }}
                 >
-                  <i class="devicon-javascript-plain"></i>
+                  <i className="devicon-javascript-plain"></i>
                 </Tooltip>
 
                 <Tooltip
@@ -164,7 +164,7 @@ export default function About() {
                     unmount: { scale: 0, y: 25 },
                   }}
                 >
-                  <i class="devicon-react-plain"></i>
+                  <i className="devicon-react-plain"></i>
                 </Tooltip>
 
                 <Tooltip
@@ -174,7 +174,7 @@ export default function About() {
                     unmount: { scale: 0, y: 25 },
                   }}
                 >
-                  <i class="devicon-typescript-plain"></i>
+                  <i className="devicon-typescript-plain"></i>
                 </Tooltip>
 
                 <Tooltip
@@ -184,7 +184,7 @@ export default function About() {
                     unmount: { scale: 0, y: 25 },
                   }}
                 >
-                  <i class="devicon-php-plain"></i>
+                  <i className="devicon-php-plain"></i>
                 </Tooltip>
 
                 <Tooltip
@@ -194,7 +194,7 @@ export default function About() {
                     unmount: { scale: 0, y: 25 },
                   }}
                 >
-                  <i class="devicon-csharp-plain"></i>
+                  <i className="devicon-csharp-plain"></i>
                 </Tooltip>
 
                 <Tooltip
@@ -204,7 +204,7 @@ export default function About() {
                     unmount: { scale: 0, y: 25 },
                   }}
                 >
-                  <i class="devicon-java-plain"></i>
+                  <i className="devicon-java-plain"></i>
                 </Tooltip>
 
                 <Tooltip
@@ -214,7 +214,7 @@ export default function About() {
                     unmount: { scale: 0, y: 25 },
                   }}
                 >
-                  <i class="devicon-mysql-plain"></i>
+                  <i className="devicon-mysql-plain"></i>
                 </Tooltip>
                 <Tooltip
                   content="Python"
@@ -223,7 +223,7 @@ export default function About() {
                     unmount: { scale: 0, y: 25 },
                   }}
                 >
-                  <i class="devicon-python-plain"></i>
+                  <i className="devicon-python-plain"></i>
                 </Tooltip>
                 <Tooltip
                   content="R"
@@ -232,7 +232,7 @@ export default function About() {
                     unmount: { scale: 0, y: 25 },
                   }}
                 >
-                  <i class="devicon-r-plain"></i>
+                  <i className="devicon-r-plain"></i>
                 </Tooltip>
               </div>
             </div>
