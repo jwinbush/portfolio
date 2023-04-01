@@ -1,25 +1,19 @@
-import { Link } from "react-router-dom";
 import bubble from "../assets/videos/bubble.mp4";
 import { Tooltip } from "@material-tailwind/react";
 import marvel from "../assets/videos/LogoAnimation.mp4";
 import porsche from "../assets/videos/PorscheAnimation.mp4";
 import { motion as m } from "framer-motion";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
-import $ from "jquery";
-
-// import html from "../assets/images/skills/html.svg";
-// import css from "../assets/images/skills/css.svg";
-// import javascript from "../assets/images/skills/javascript.svg";
-
 import { FaArrowDown } from "react-icons/fa";
 import { Video } from "../components/video/Video";
 
-//jQuery scroll to top
-$(document).ready(function () {
-  $("#skills").click(function () {
-    window.scrollTo({ top: 950, behavior: "smooth" });
+// Behavior: smooth keeps it smooth!
+const scrollToBottom = () => {
+  window.scrollTo({
+    top: 20000,
+    behavior: "smooth",
   });
-});
+};
 
 export default function About() {
   const tools = [
@@ -50,14 +44,6 @@ export default function About() {
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
         className="bg-black w-full h-screen bg-top bg-cover duration-75"
-        style={{
-          backgroundImage:
-            "url('https://images.wallpapersden.com/image/download/black-minimalist-hex_bW1paWiUmZqaraWkpJRmbmdlrWZlbWU.jpg')",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          // backgroundAttachment:'fixed'
-        }}
       >
         <div className="grid max-w-full px-4 pt-8 mx-auto lg:gap-8 xl:gap-0 lg:pt-8 lg:grid-cols-12">
           <m.div
@@ -86,14 +72,14 @@ export default function About() {
               After Effects, exercising, and getting out of my comfort zone.
             </m.p>
 
-            <Link
-              to="/about"
+            <button
+              onClick={scrollToBottom}
               id="skills"
               className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center rounded-md text-black bg-gradient-to-br from-cyan-400 via-emerald-300 to-cyan-400 hover:bg-gradient-to-br shadow-xl shadow-cyan-400/50 animate-text"
             >
               Skills
               <FaArrowDown className="ml-2" />
-            </Link>
+            </button>
           </div>
           <m.div
             variants={slideIn("right", "tween", 0.2, 1)}
