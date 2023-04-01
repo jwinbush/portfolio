@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import React, { useRef, useEffect } from "react";
 import { FaGithub, FaFilePdf } from "react-icons/fa";
 import $ from "jquery";
-import logo from "../../assets/images/EmeraldLogo.png"
-
+import logo from "../../assets/images/EmeraldLogo.png";
+import { motion as m } from "framer-motion";
+import { staggerContainer } from "../../utils/motion";
 
 export default function Header() {
-
   const headerRef = useRef(null);
 
   useEffect(() => {
@@ -18,7 +18,6 @@ export default function Header() {
       ) {
         headerRef.current.classList.add("shrink");
         headerRef.current.classList.add("mobile-menu-2");
-
       } else {
         headerRef.current.classList.remove("shrink");
       }
@@ -37,24 +36,28 @@ export default function Header() {
   });
 
   return (
-    <div>
+    <m.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+    >
       <div id="gradient" className="py-[0.3rem] fixed w-full z-[1000]"></div>
       <nav
         ref={headerRef}
         className="bg-transparent text-white px-4 lg:px-6 py-3 mt-[0.6rem]  z-[1000] fixed w-full"
       >
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+        <m.div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex items-center">
             {/* <img
               src="https://flowbite.com/docs/images/logo.svg"
               className="mr-3 h-6 sm:h-9"
               alt="Flowbite Logo"
             /> */}
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-             Jay
-            </span>
+            <h1  className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              Jay
+            </h1>
             <img src={logo} alt="" width={18} />
-            
           </Link>
           <div className="flex items-center lg:order-2">
             <a
@@ -149,8 +152,8 @@ export default function Header() {
               </li>
             </ul>
           </div>
-        </div>
+        </m.div>
       </nav>
-    </div>
+    </m.div>
   );
 }

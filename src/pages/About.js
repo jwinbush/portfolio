@@ -3,8 +3,9 @@ import bubble from "../assets/videos/bubble.mp4";
 import { Tooltip } from "@material-tailwind/react";
 import marvel from "../assets/videos/LogoAnimation.mp4";
 import porsche from "../assets/videos/PorscheAnimation.mp4";
+import { motion as m } from "framer-motion";
+import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 import $ from "jquery";
-
 
 // import html from "../assets/images/skills/html.svg";
 // import css from "../assets/images/skills/css.svg";
@@ -13,25 +14,25 @@ import $ from "jquery";
 import { FaArrowDown } from "react-icons/fa";
 import { Video } from "../components/video/Video";
 
-
-
-  //jQuery scroll to top
-  $(document).ready(function () {
-    $("#skills").click(function () {
-      window.scrollTo({ top: 950, behavior: "smooth" });
-    });
+//jQuery scroll to top
+$(document).ready(function () {
+  $("#skills").click(function () {
+    window.scrollTo({ top: 950, behavior: "smooth" });
   });
+});
 
 export default function About() {
-
-  
   const tools = [
     { id: 1, content: "VS Code", name: "devicon-vscode-plain" },
     { id: 2, content: "Visual Studio", name: "devicon-visualstudio-plain" },
     { id: 3, content: "PhpStorm", name: "devicon-phpstorm-plain" },
     { id: 4, content: "Apache", name: "devicon-apache-plain" },
-    { id: 5, content: "Adobe After Effects", name: "devicon-aftereffects-plain" },
-    { id: 6, content: "Adobe Illustrator", name: "devicon-illustrator-plain" }
+    {
+      id: 5,
+      content: "Adobe After Effects",
+      name: "devicon-aftereffects-plain",
+    },
+    { id: 6, content: "Adobe Illustrator", name: "devicon-illustrator-plain" },
   ];
   return (
     <div className="bg-black pt-32 ">
@@ -43,7 +44,11 @@ export default function About() {
         Get to know me.
       </h1>
       {/* HERO SECTION */}
-      <section
+      <m.section
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
         className="bg-black w-full h-screen bg-top bg-cover duration-75"
         style={{
           backgroundImage:
@@ -55,7 +60,8 @@ export default function About() {
         }}
       >
         <div className="grid max-w-full px-4 pt-8 mx-auto lg:gap-8 xl:gap-0 lg:pt-8 lg:grid-cols-12">
-          <div
+          <m.div
+            variants={slideIn("right", "tween", 0.2, 1)}
             className="lg:col-span-5 max-w-[700px] mr-6 rounded lg:hidden"
             data-te-ripple-init
           >
@@ -65,18 +71,20 @@ export default function About() {
               muted={true}
               autoplay={true}
               loop={true}
-              
             />
-          </div>
+          </m.div>
           <div className="mr-auto place-self-center lg:col-span-7 lg:pl-10">
-            <p className="flex max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl dark:text-gray-400">
+            <m.p
+              variants={textVariant(0.6)}
+              className="flex max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl dark:text-gray-400"
+            >
               A versatile Software Developer with years of experience in
               programming, UX/UI design, and data analytics. A well-organized
               person, problem solver, and independent employee with high
               attention to detail. I'm someone who loves to take on new
               challenges. In my free time I enjoy playing the piano, using Adobe
               After Effects, exercising, and getting out of my comfort zone.
-            </p>
+            </m.p>
 
             <Link
               to="/about"
@@ -86,9 +94,9 @@ export default function About() {
               Skills
               <FaArrowDown className="ml-2" />
             </Link>
-            
           </div>
-          <div
+          <m.div
+            variants={slideIn("right", "tween", 0.2, 1)}
             className="lg:col-span-5 max-w-[700px] mr-6 rounded hidden lg:flex"
             data-te-ripple-init
           >
@@ -99,9 +107,9 @@ export default function About() {
               autoplay={true}
               loop={true}
             />
-          </div>
+          </m.div>
         </div>
-      </section>
+      </m.section>
       <section className="pb-6 text-center h-screen grid lg:grid-cols-2">
         <div>
           <h2

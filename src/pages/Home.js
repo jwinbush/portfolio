@@ -3,27 +3,31 @@ import car from "../assets/videos/OdysseyRentals.mp4";
 import movie from "../assets/videos/cineFilms.mp4";
 import spotify from "../assets/videos/Spotify.mp4";
 import emerald from "../assets/images/emerald.png";
+import { motion as m } from "framer-motion";
+import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 
 export default function Home() {
   return (
     <div>
       {/* HERO SECTION */}
-      <section className="bg-black w-full h-screen bg-top bg-cover duration-75 pt-20 lg:pt-36 pb-6">
+      <m.section
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className="bg-black w-full h-screen bg-top bg-cover duration-75 pt-20 lg:pt-36 pb-6"
+      >
         <div className="grid max-w-full px-4 pt-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7 lg:pl-10">
-            <div
-              className="flex lg:col-span-5 lg:hidden w-full lg:max-w-[700px] mr-6 rounded"
-            >
-              <img
-                src={emerald}
-                alt="Lighthouse"
-               
-              />
-            </div>
+            <m.div variants={slideIn('right', 'tween', 0.2, 1)}  className="flex lg:col-span-5 lg:hidden w-full lg:max-w-[700px] mr-6 rounded">
+              <img src={emerald} alt="Lighthouse" />
+            </m.div>
+            <m.div  variants={textVariant(0.6)}>
             <p className="inline-flex max-w-2xl mb-2 text-white text-2xl lg:text-6xl font-bold dark:text-gray-400">
               Welcome, I'm
             </p>
             <h1
+             
               className="lg:inline-flex max-w-3xl pb-4 font-extrabold tracking-tight leading-none text-5xl lg:text-8xl bg-gradient-to-r bg-clip-text  text-transparent 
               from-cyan-400 via-emerald-300 to-cyan-400
               animate-text"
@@ -36,6 +40,7 @@ export default function Home() {
               code that is reusable. My objective is to develop, maintain, and
               design applications that make a difference.
             </p>
+            </m.div>
             <Link
               to="/contact"
               className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-md text-white bg-gradient-to-br from-black to-gray-600 shadow-xl hover:shadow-gray-600/60"
@@ -61,18 +66,15 @@ export default function Home() {
               </svg>
             </Link>
           </div>
-          <div
+          <m.div
+          variants={slideIn('right', 'tween', 0.2, 1)} 
             className="hidden lg:col-span-5 lg:flex max-w-[700px] mr-6 rounded-3xl"
             data-te-ripple-init
           >
-            <img
-                src={emerald}
-                alt="Lighthouse"
-               
-              />
-          </div>
+            <img src={emerald} alt="Lighthouse" />
+          </m.div>
         </div>
-      </section>
+      </m.section>
 
       <section className="bg-black h-full">
         <div className="grid lg:grid-cols-3 px-2 gap-2 text-center">
@@ -89,13 +91,17 @@ export default function Home() {
               </h5>
 
               <a
-                href="https://github.com/jwinbush/movie" rel="noopener noreferrer" target="_blank"
+                href="https://github.com/jwinbush/movie"
+                rel="noopener noreferrer"
+                target="_blank"
                 className="inline-flex items-center px-3 py-2 mr-2 text-center rounded-md text-white bg-gradient-to-br from-black to-gray-600 shadow-lg hover:shadow-gray-600/60 animate-text"
               >
                 Repository
               </a>
               <a
-                href="https://cinefilm.vercel.app" rel="noopener noreferrer" target="_blank"
+                href="https://cinefilm.vercel.app"
+                rel="noopener noreferrer"
+                target="_blank"
                 className="inline-flex items-center px-3 py-2 font-medium text-center rounded-md text-black bg-gradient-to-br from-cyan-400 via-emerald-300 to-cyan-400 hover:bg-gradient-to-br shadow-lg shadow-cyan-400/50 animate-text"
               >
                 Live Demo
@@ -140,13 +146,16 @@ export default function Home() {
               </h5>
 
               <a
-                href="https://github.com/jwinbush/odysseyrentals" rel="noopener noreferrer" target="_blank"
+                href="https://github.com/jwinbush/odysseyrentals"
+                rel="noopener noreferrer"
+                target="_blank"
                 className="inline-flex items-center px-3 py-2 mr-2 text-center rounded-md text-white bg-gradient-to-br from-black to-gray-600 shadow-lg hover:shadow-gray-600/60 animate-text"
               >
                 Repository
               </a>
               <a
-                href="/" rel="noopener noreferrer"
+                href="/"
+                rel="noopener noreferrer"
                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-md text-black bg-gradient-to-br from-cyan-400 via-emerald-300 to-cyan-400 hover:bg-gradient-to-br shadow-lg shadow-cyan-400/50 animate-text"
               >
                 Live Demo
@@ -190,13 +199,17 @@ export default function Home() {
               </h5>
 
               <a
-                href="https://github.com/jwinbush/spotify" rel="noopener noreferrer" target="_blank"
+                href="https://github.com/jwinbush/spotify"
+                rel="noopener noreferrer"
+                target="_blank"
                 className="inline-flex items-center px-3 py-2 mr-2 text-center rounded-md text-white bg-gradient-to-br from-black to-gray-600 shadow-lg hover:shadow-gray-600/60 animate-text"
               >
                 Repository
               </a>
               <a
-                href="https://jawonwinbush.com" rel="noopener noreferrer" target="_blank"
+                href="https://jawonwinbush.com"
+                rel="noopener noreferrer"
+                target="_blank"
                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-md text-black bg-gradient-to-br from-cyan-400 via-emerald-300 to-cyan-400 hover:bg-gradient-to-br shadow-lg shadow-cyan-400/50 animate-text"
               >
                 Live Demo
