@@ -122,7 +122,7 @@ export default function Projects() {
               </h5>
 
               <a
-                href="https://www.github.com/jwinbush/newportfolio2023"
+                href="https://www.github.com/jwinbush/portfolio"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="inline-flex items-center px-3 py-2 mr-2 text-sm font-medium text-center rounded-md text-black bg-gradient-to-br from-cyan-400 via-emerald-300 to-cyan-400 hover:bg-gradient-to-br shadow-lg shadow-cyan-400/50 animate-text"
@@ -151,8 +151,11 @@ export default function Projects() {
                 </svg>
               </a>
               <div className="px-6 py-4">
-                <span className="inline-block bg-gray-100 rounded-md px-3 py-1 text-sm font-semibold text-gray-600 mr-2">
+              <span className="inline-block bg-gray-100 rounded-md px-3 py-1 text-sm font-semibold text-gray-600 mr-2">
                   react
+                </span>
+                <span className="inline-block bg-gray-100 rounded-md px-3 py-1 text-sm font-semibold text-gray-600 mr-2">
+                  framer-motion
                 </span>
                 <span className="inline-block bg-gray-100 rounded-md px-3 py-1 text-sm font-semibold text-gray-600">
                   tailwind-css
