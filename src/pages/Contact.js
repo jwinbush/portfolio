@@ -2,7 +2,7 @@ import React from "react";
 import gmail from "../assets/images/gmail.png";
 import linkedin from "../assets/images/linkedin.png";
 import github from "../assets/images/github.png";
-import phone from "../assets/images/iphone-messages-app.png"
+import phone from "../assets/images/iphone-messages-app.png";
 
 import { Link } from "react-router-dom";
 
@@ -18,10 +18,34 @@ export default function Contact() {
           Get in touch.
         </h1>
         <div className="flex justify-center">
-          <img className="lg:w-20 lg:h-20 w-16 h-16 shadow-md" src={gmail} alt="" />
-          <img className="lg:w-20 lg:h-20 w-16 h-16" src={linkedin} alt="" />
-          <img className="lg:w-20 lg:h-20 w-16 h-16" src={github} alt="" />
-          <img className="lg:w-20 lg:h-20 w-16 h-16" src={phone} alt="" />
+          <Link to="mailto:jawonwinbush@gmail.com" target="_blank">
+            <img
+              className="cursor-pointer lg:w-20 lg:h-20 w-16 h-16 shadow-md"
+              src={gmail}
+              alt=""
+            />
+          </Link>
+          <Link to="https://www.linkedin.com/in/jawonmwinbush/" target="_blank">
+            <img
+              className="cursor-pointer lg:w-20 lg:h-20 w-16 h-16"
+              src={linkedin}
+              alt=""
+            />
+          </Link>
+          <Link to="https://github.com/jwinbush" target="_blank">
+            <img
+              className="cursor-pointer lg:w-20 lg:h-20 w-16 h-16"
+              src={github}
+              alt=""
+            />
+          </Link>
+          <Link to="tel:3176544324" target="_blank">
+            <img
+              className="cursor-pointer lg:w-20 lg:h-20 w-16 h-16"
+              src={phone}
+              alt=""
+            />
+          </Link>
         </div>
         <p className="mb-8 lg:mb-16 font-light text-center text-white dark:text-gray-400 sm:text-xl">
           If you wanna get in touch, talk to me about a project collaboration,
@@ -30,7 +54,7 @@ export default function Contact() {
         </p>
         <form action="#" className="space-y-8 px-4">
           <div>
-            <label 
+            <label
               for="email"
               className="block mb-2 font-medium text-white dark:text-gray-300"
             >
@@ -59,7 +83,7 @@ export default function Contact() {
               required
             />
           </div>
-          <div className="sm:col-span-2 pb-10" >
+          <div className="sm:col-span-2 pb-10">
             <label
               for="message"
               className="block mb-2  font-medium text-white dark:text-gray-400"

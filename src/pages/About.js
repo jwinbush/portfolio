@@ -10,7 +10,7 @@ import { Video } from "../components/video/Video";
 // Behavior: smooth keeps it smooth!
 const scrollToBottom = () => {
   window.scrollTo({
-    top: 20000,
+    top: 1000,
     behavior: "smooth",
   });
 };
