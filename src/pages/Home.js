@@ -23,7 +23,7 @@ export default function Home() {
               <img src={emerald} alt="Lighthouse" />
             </m.div>
             <m.div  variants={textVariant(0.6)}>
-            <p className="inline-flex max-w-2xl mb-2 text-white text-2xl lg:text-6xl font-bold dark:text-gray-400">
+            <p className="max-w-2xl mb-2 text-white text-2xl lg:text-6xl font-bold dark:text-gray-400">
               Welcome, I'm
             </p>
             <h1
