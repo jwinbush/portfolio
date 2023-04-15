@@ -230,7 +230,7 @@ export default function Header() {
           <span className="font-semibold text-xl tracking-tight">
             <Link to="/" className="flex items-center">
               <h1 className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Jay
+                Jay Winbush
               </h1>
               <img src={logo} alt="" width={18} />
             </Link>
