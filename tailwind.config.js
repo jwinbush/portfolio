@@ -18,6 +18,16 @@ module.exports = {
                     },
                 },
             },
+            backdropBlur: {
+                // Add your backdrop blur configurations here
+                // For example:
+                none: "none",
+                sm: "4px",
+                md: "8px",
+                lg: "12px",
+                xl: "16px",
+                "2xl": "20px",
+            },
             // fontFamily: {
             //     Americana: ["Americana"],
 

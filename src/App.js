@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Preloader from "./components/preload/Pre";
+// import Preloader from "./components/preload/Pre";
 import { useEffect, useState } from "react";
 import ScrollToTop from "./components/scroll/ScrollToTop";
 import ResumeNew from "./pages/Resume";
@@ -17,14 +17,14 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       updateLoad(false);
-    }, 4000); //loading screen last 5 seconds
+    }, 2000); //loading screen last 2 seconds
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <BrowserRouter>
-      <Preloader load={load} />
+      {/* <Preloader load={load} /> */}
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Header />
         <ScrollToTop />

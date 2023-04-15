@@ -28,7 +28,7 @@ export default function Home() {
             </p>
             <h1
              
-              className="lg:inline-flex max-w-3xl pb-4 font-extrabold tracking-tight leading-none text-5xl lg:text-8xl bg-gradient-to-r bg-clip-text  text-transparent 
+              className="max-w-3xl pb-4 font-extrabold tracking-tight leading-none text-5xl lg:text-8xl bg-gradient-to-r bg-clip-text  text-transparent 
               from-cyan-400 via-emerald-300 to-cyan-400
               animate-text"
             >
