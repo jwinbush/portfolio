@@ -3,6 +3,8 @@ import Odyssey from "../../assets/videos/OdysseyRentals.mp4";
 import Spotify from "../../assets/videos/Spotify.mp4";
 import Sharp from "../../assets/images/Sharp.png";
 import Portfolio from "../../assets/images/MyPortfolio.png";
+import marvel from "../../assets/videos/LogoAnimation.mp4";
+import porsche from "../../assets/videos/PorscheAnimation.mp4";
 
 export default function Projects() {
   const list = [
@@ -33,7 +35,7 @@ export default function Projects() {
       title: "Odyssey Rentals",
       videoFile: Odyssey,
       link1: "https://github.com/jwinbush/odysseyrentals",
-      link2: "#",
+      link2: "https://in-info-web4.informatics.iupui.edu/~jwinbush/OdysseyRentals/",
 
       one: "php",
       two: "mysql",
@@ -218,6 +220,21 @@ export default function Projects() {
           </div>
         </section>
       </div>
+      <section className="text-center">
+        <h2
+          className=" font-extrabold text-2xl lg:text-5xl text-white
+        animate-text pb-4"
+        >
+          My recent work in Adobe After Effects.
+        </h2>
+        <div
+          className="grid lg:grid-cols-2 px-2 gap-2 text-center"
+          data-te-ripple-init
+        >
+          <video src={marvel} controls autoplay></video>
+          <video src={porsche} controls autoplay></video>
+        </div>
+      </section>
     </div>
   );
 }

@@ -1,7 +1,5 @@
 import bubble from "../assets/videos/bubble.mp4";
 import { Tooltip } from "@material-tailwind/react";
-import marvel from "../assets/videos/LogoAnimation.mp4";
-import porsche from "../assets/videos/PorscheAnimation.mp4";
 import { motion as m } from "framer-motion";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 import { FaArrowDown } from "react-icons/fa";
@@ -260,22 +258,6 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="text-center">
-        <h2
-          className=" font-extrabold text-2xl lg:text-5xl text-white
-        animate-text pb-4"
-        >
-          My recent work in Adobe After Effects.
-        </h2>
-        <div
-          className="grid lg:grid-cols-2 px-2 gap-2 text-center"
-          data-te-ripple-init
-        >
-          <video src={marvel} controls autoplay></video>
-          <video src={porsche} controls autoplay></video>
         </div>
       </section>
     </div>
