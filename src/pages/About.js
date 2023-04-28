@@ -1,9 +1,9 @@
-import bubble from "../assets/videos/bubble.mp4";
 import { Tooltip } from "@material-tailwind/react";
 import { motion as m } from "framer-motion";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 import { FaArrowDown } from "react-icons/fa";
 import { Video } from "../components/video/Video";
+import { Link } from "react-router-dom";
 
 // Behavior: smooth keeps it smooth!
 const scrollToBottom = () => {
@@ -30,7 +30,7 @@ export default function About() {
     <div className="bg-black pt-32 ">
       <h1
         className="mb-4 text-4xl text-center font-extrabold lg:text-7xl bg-gradient-to-r bg-clip-text text-transparent 
-        from-cyan-400 via-emerald-300 to-cyan-400
+        from-orange-500 via-red-500 to-orange-500
         animate-text"
       >
         Get to know me.
@@ -50,7 +50,7 @@ export default function About() {
             data-te-ripple-init
           >
             <Video
-              src={bubble}
+              src="https://cdn.dribbble.com/users/653699/screenshots/15711093/media/babd4a52840eac22f088498b0cccb47b.mp4"
               id="myVideo1"
               muted={true}
               autoplay={true}
@@ -62,30 +62,58 @@ export default function About() {
               variants={textVariant(0.6)}
               className="flex max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl dark:text-gray-400"
             >
-              A versatile Software Developer with years of experience in
-              programming, UX/UI design, and data analytics. A well-organized
-              person, problem solver, and independent employee with high
-              attention to detail. I'm someone who loves to take on new
-              challenges. In my free time I enjoy playing the piano, using Adobe
-              After Effects, exercising, and getting out of my comfort zone.
+              I'm always seeking to learn and grow my skills, staying up-to-date
+              with the latest trends and technologies in the industry. Moreover,
+              I relish taking on challenges, whether it's learning a new skill
+              or tackling a difficult project, because I know that the reward of
+              success is always worth the effort.
+            </m.p>
+
+            <m.p
+              variants={textVariant(0.6)}
+              className="flex max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl dark:text-gray-400"
+            >
+              In my spare time, I pursue a variety of interests that keep my
+              mind sharp and my body energized. Playing the piano is one of my
+              most recent passions, and I find joy in creating melodies and
+              exploring new compositions. I also enjoy exercising, rollerblading, and gaming.
             </m.p>
 
             <button
               onClick={scrollToBottom}
               id="skills"
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center rounded-md text-black bg-gradient-to-br from-cyan-400 via-emerald-300 to-cyan-400 hover:bg-gradient-to-br shadow-xl shadow-cyan-400/50 animate-text"
+              className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-md text-white bg-gradient-to-br from-gray-700 via-black to-gray-600 hover:bg-gradient-to-br shadow-xl hover:shadow-gray-700/50 animate-text"
             >
               Skills
               <FaArrowDown className="ml-2" />
             </button>
+            <Link
+              to="/portfolio"
+              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center rounded-md text-white bg-gradient-to-br from-orange-500 via-red-500 to-orange-500 hover:bg-gradient-to-br shadow-xl hover:shadow-red-400/50 animate-text"
+            >
+              Projects
+              <svg
+                className="w-5 h-5 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </Link>
           </div>
+
           <m.div
             variants={slideIn("right", "tween", 0.2, 1)}
             className="lg:col-span-5 max-w-[700px] mr-6 rounded hidden lg:flex"
             data-te-ripple-init
           >
             <Video
-              src={bubble}
+              src="https://cdn.dribbble.com/users/653699/screenshots/15711093/media/babd4a52840eac22f088498b0cccb47b.mp4"
               id="myVideo1"
               muted={true}
               autoplay={true}
@@ -98,13 +126,13 @@ export default function About() {
         <div>
           <h2
             className=" font-extrabold text-2xl lg:text-5xl bg-gradient-to-r bg-clip-text text-transparent 
-        from-cyan-400 via-emerald-300 to-cyan-400
+            from-orange-500 via-red-500 to-orange-400
         animate-text pb-4"
           >
             Professional Skillset
           </h2>
           <div className="flex justify-center px-2 gap-2 text-center text-white pb-8">
-            <div className="p-4 rounded-md shadow-xl shadow-gray-900/70">
+            <div className="p-4 rounded-md">
               <div
                 id="languages"
                 className="grid grid-cols-4 lg:gap-10 gap-6 lg:text-9xl text-7xl"
@@ -160,16 +188,6 @@ export default function About() {
                 </Tooltip>
 
                 <Tooltip
-                  content="TypeScript"
-                  animate={{
-                    mount: { scale: 1, y: 0 },
-                    unmount: { scale: 0, y: 25 },
-                  }}
-                >
-                  <i className="devicon-typescript-plain"></i>
-                </Tooltip>
-
-                <Tooltip
                   content="PHP"
                   animate={{
                     mount: { scale: 1, y: 0 },
@@ -180,13 +198,13 @@ export default function About() {
                 </Tooltip>
 
                 <Tooltip
-                  content="C#"
+                  content="Spring"
                   animate={{
                     mount: { scale: 1, y: 0 },
                     unmount: { scale: 0, y: 25 },
                   }}
                 >
-                  <i className="devicon-csharp-plain"></i>
+                  <i className="devicon-spring-plain"></i>
                 </Tooltip>
 
                 <Tooltip
@@ -200,7 +218,7 @@ export default function About() {
                 </Tooltip>
 
                 <Tooltip
-                  content="MySQL"
+                  content="SQL"
                   animate={{
                     mount: { scale: 1, y: 0 },
                     unmount: { scale: 0, y: 25 },
@@ -209,22 +227,13 @@ export default function About() {
                   <i className="devicon-mysql-plain"></i>
                 </Tooltip>
                 <Tooltip
-                  content="Python"
+                  content="MongoDB"
                   animate={{
                     mount: { scale: 1, y: 0 },
                     unmount: { scale: 0, y: 25 },
                   }}
                 >
-                  <i className="devicon-python-plain"></i>
-                </Tooltip>
-                <Tooltip
-                  content="R"
-                  animate={{
-                    mount: { scale: 1, y: 0 },
-                    unmount: { scale: 0, y: 25 },
-                  }}
-                >
-                  <i className="devicon-r-plain"></i>
+                  <i className="devicon-mongodb-plain"></i>
                 </Tooltip>
               </div>
             </div>
@@ -233,13 +242,13 @@ export default function About() {
         <div>
           <h2
             className=" font-extrabold text-2xl lg:text-5xl bg-gradient-to-r bg-clip-text text-transparent 
-        from-cyan-400 via-emerald-300 to-cyan-400
+            from-orange-500 via-red-500 to-orange-500
         animate-text pb-4"
           >
             Tools & Apps
           </h2>
           <div className="flex justify-center px-2 gap-2 text-center text-white">
-            <div className="p-4 rounded-md shadow-xl shadow-gray-900/70">
+            <div className="p-4 rounded-md">
               <div
                 id="tool"
                 className="grid grid-cols-4 lg:gap-10 gap-6 lg:text-9xl text-7xl"
