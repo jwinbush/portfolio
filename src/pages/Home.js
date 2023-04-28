@@ -93,7 +93,7 @@ export default function Home() {
       <section className="bg-black/95 h-full">
       <div class="relative flex py-5 items-center">
     <div class="flex-grow border-t border-gray-700"></div>
-    <span class="flex-shrink mx-4 text-white sm:text-center"> Here are some of my recent works. This month I have focused primarly on building full-stack applications. </span>
+    <span class="flex-shrink mx-4 text-white sm:text-center"> Here are some of my recent works. This month I have focused primarily on building full-stack applications. </span>
     <div class="flex-grow border-t border-gray-700"></div>
 </div>
       <p className="mb-8 lg:mb-16 font-light text-center text-white dark:text-gray-400 sm:text-xl">
