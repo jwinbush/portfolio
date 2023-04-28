@@ -73,6 +73,8 @@ export default function Projects() {
       >
         Projects that I've worked on.
       </h1>
+      <p className="text-center text-white text-2xl">More projects are on the way!</p>
+
       <div className="pt-32 grid lg:grid-cols-2">
         {list.map(
           ({
