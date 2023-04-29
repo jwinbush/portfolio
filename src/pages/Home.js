@@ -32,7 +32,7 @@ export default function Home() {
             />
             </m.div>
             <m.div variants={textVariant(0.6)}>
-              <p className="max-w-2xl mb-2 text-white text-2xl lg:text-6xl font-bold dark:text-gray-400">
+              <p className="max-w-2xl mb-2 text-white text-2xl lg:text-6xl font-bold">
                 Hello, my name is
               </p>
               <h1
@@ -42,8 +42,8 @@ export default function Home() {
               >
                 Jay Winbush<span className="text-white">.</span>
               </h1>
-              <p className="max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl dark:text-gray-400">
-                I'm a <span className="bg-gradient-to-r bg-clip-text  text-transparent 
+              <p className="max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">
+                I'm a <span className="bg-gradient-to-r bg-clip-text 
               from-orange-500 via-red-500 to-orange-400 font-bold">Software Developer</span> who brings a creative and solution driven
                 mindset to every team and project. I have great interest in full-stack development, human-computer interactions, and everything in between.
               </p>

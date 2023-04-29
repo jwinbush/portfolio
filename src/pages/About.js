@@ -60,7 +60,7 @@ export default function About() {
           <div className="mr-auto place-self-center lg:col-span-7 lg:pl-10">
             <m.p
               variants={textVariant(0.6)}
-              className="flex max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl dark:text-gray-400"
+              className="flex max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl"
             >
               I'm always seeking to learn and grow my skills, staying up-to-date
               with the latest trends and technologies in the industry. Moreover,
@@ -71,7 +71,7 @@ export default function About() {
 
             <m.p
               variants={textVariant(0.6)}
-              className="flex max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl dark:text-gray-400"
+              className="flex max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl"
             >
               In my spare time, I pursue a variety of interests that keep my
               mind sharp and my body energized. Playing the piano is one of my
