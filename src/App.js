@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import { useEffect, useState } from "react";
 import ScrollToTop from "./components/scroll/ScrollToTop";
 import ResumeNew from "./pages/Resume";
+import Social from "./components/social-icons/Social";
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -36,6 +37,7 @@ function App() {
           <Route path="/resume" exact element={<ResumeNew />} />
 
         </Routes>
+        <Social/>
         <Footer />
       </div>
     </BrowserRouter>

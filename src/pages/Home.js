@@ -6,6 +6,7 @@ import { motion as m } from "framer-motion";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 import { Video } from "../components/video/Video";
 
+
 export default function Home() {
   return (
     <div>
@@ -24,12 +25,12 @@ export default function Home() {
               className="flex lg:col-span-5 lg:hidden w-full lg:max-w-[700px] mr-6 rounded"
             >
               <Video
-              src="https://cdn.dribbble.com/users/527197/screenshots/15676949/media/077b057dc5a3bd8d36c97639a993d0a9.mp4"
-              id="myVideo1"
-              alt="sphere"
-              autoplay
-              loop
-            />
+                src="https://cdn.dribbble.com/users/527197/screenshots/15676949/media/077b057dc5a3bd8d36c97639a993d0a9.mp4"
+                id="myVideo1"
+                alt="sphere"
+                autoplay
+                loop
+              />
             </m.div>
             <m.div variants={textVariant(0.6)}>
               <p className="max-w-2xl mb-2 text-white text-2xl lg:text-6xl font-bold">
@@ -43,9 +44,16 @@ export default function Home() {
                 Jay Winbush<span className="text-white">.</span>
               </h1>
               <p className="max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">
-                I'm a <span className="bg-gradient-to-r bg-clip-text 
-              from-orange-500 via-red-500 to-orange-400 font-bold">Software Developer</span> who brings a creative and solution driven
-                mindset to every team and project. I have great interest in full-stack development, human-computer interactions, and everything in between.
+                I'm a{" "}
+                <span
+                  className="bg-gradient-to-r bg-clip-text 
+              from-orange-500 via-red-500 to-orange-400 font-bold"
+                >
+                  Software Developer
+                </span>{" "}
+                who brings a creative and solution driven mindset to every team
+                and project. I have great interest in full-stack development,
+                human-computer interactions, and everything in between.
               </p>
             </m.div>
             <Link
@@ -91,13 +99,16 @@ export default function Home() {
       </m.section>
 
       <section className="bg-black/95 h-full">
-      <div class="relative flex py-5 items-center">
-    <div class="flex-grow border-t border-gray-700"></div>
-    <span class="flex-shrink mx-4 text-white sm:text-center"> Here are some of my recent works. This month I have focused primarily on building full-stack applications. </span>
-    <div class="flex-grow border-t border-gray-700"></div>
-</div>
-      <p className="mb-8 lg:mb-16 font-light text-center text-white dark:text-gray-400 sm:text-xl">
-        </p>
+        <div class="relative flex py-5 items-center">
+          <div class="flex-grow border-t border-gray-700"></div>
+          <span class="flex-shrink mx-4 text-white sm:text-center">
+            {" "}
+            Here are some of my recent works. This month I have focused
+            primarily on building full-stack applications.{" "}
+          </span>
+          <div class="flex-grow border-t border-gray-700"></div>
+        </div>
+        <p className="mb-8 lg:mb-16 font-light text-center text-white dark:text-gray-400 sm:text-xl"></p>
         <div className="grid lg:grid-cols-3 px-2 gap-2 text-center">
           <div data-te-ripple-init>
             <img src={movie} alt="Movie" className="rounded-t-md" />
@@ -201,7 +212,7 @@ export default function Home() {
             <img src={EchoChat} alt="Spotify" className="rounded-t-md" />
             <div className="p-5 bg-gray-800/40 shadow-lg rounded-b-md">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
-               Echo Chat
+                Echo Chat
               </h5>
 
               <a
@@ -212,16 +223,16 @@ export default function Home() {
               >
                 Repository
               </a>
-              
+
               <div className="px-6 py-4">
                 <span className="inline-block bg-gray-100 rounded-md px-3 py-1 text-sm font-semibold text-gray-600 mr-2">
                   mern-stack
                 </span>
                 <span className="inline-block bg-gray-100 rounded-md px-3 py-1 text-sm font-semibold text-gray-600 mr-2">
-                 material-ui
+                  material-ui
                 </span>
                 <span className="inline-block bg-gray-100 rounded-md px-3 py-1 text-sm font-semibold text-gray-600">
-                redux
+                  redux
                 </span>
               </div>
             </div>
