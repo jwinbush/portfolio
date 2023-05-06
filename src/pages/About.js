@@ -62,21 +62,22 @@ export default function About() {
               variants={textVariant(0.6)}
               className="flex max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl"
             >
-              I'm always seeking to learn and grow my skills, staying up-to-date
-              with the latest trends and technologies in the industry. Moreover,
-              I relish taking on challenges, whether it's learning a new skill
-              or tackling a difficult project, because I know that the reward of
-              success is always worth the effort.
+              I am an aspiring architect turned full stack developer, driven by a 
+              deep passion for both the art of design and the intricacies of software 
+              development. With a solid foundation in architecture, I bring a unique 
+              perspective to the world of programming, combining creativity and 
+              technical expertise in my work.
             </m.p>
 
             <m.p
               variants={textVariant(0.6)}
               className="flex max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl"
             >
-              In my spare time, I pursue a variety of interests that keep my
-              mind sharp and my body energized. Playing the piano is one of my
-              most recent passions, and I find joy in creating melodies and
-              exploring new compositions. I also enjoy exercising, rollerblading, and gaming.
+              Having transitioned into the realm of technology, I have embraced the
+              challenges and opportunities that come with being a full stack 
+              developer. My architectural background has instilled in me a 
+              meticulous attention to detail, a strong problem-solving ability, 
+              and an appreciation for aesthetic design.
             </m.p>
 
             <button
