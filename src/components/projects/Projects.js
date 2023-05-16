@@ -1,5 +1,6 @@
 import cineFilms from "../../assets/images/CinefilmScreenshot.png";
 import Odyssey from "../../assets/images/OdysseyScreenshot.png";
+import Instrumasters from "../../assets/images/Instrumaster.png";
 import Spotify from "../../assets/images/SpotifyScreenshot.png";
 import Sharp from "../../assets/images/Sharp.png";
 import EchoChat from "../../assets/images/EchoChat.png";
@@ -147,7 +148,7 @@ export default function Projects() {
                     href={link1}
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="inline-flex items-center px-3 py-2 mr-2 text-sm font-medium text-center rounded-md text-black bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text"
+                    className="inline-flex items-center px-3 py-2 mr-2 text-sm font-medium text-center rounded-md text-white bg-gradient-to-br from-black to-gray-600 shadow-lg hover:shadow-gray-600/60 animate-text"
                   >
                     Repository
                   </a>
@@ -155,7 +156,7 @@ export default function Projects() {
                     href={link2}
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-md text-black bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text"
+                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-md text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text"
                   >
                     Live Demo
                     <svg
@@ -205,7 +206,7 @@ export default function Projects() {
                 href="https://www.github.com/jwinbush/portfolio"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="inline-flex items-center px-3 py-2 mr-2 text-sm font-medium text-center rounded-md text-black bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text"
+                className="inline-flex items-center px-3 py-2 mr-2 text-sm font-medium text-center rounded-md text-white bg-gradient-to-br from-black to-gray-600 shadow-lg hover:shadow-gray-600/60 animate-text"
               >
                 Repository
               </a>
@@ -213,7 +214,7 @@ export default function Projects() {
                 href="https://newportfolio2023.vercel.app"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-md text-black bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text"
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-md text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text"
               >
                 Live Demo
                 <svg
@@ -244,7 +245,50 @@ export default function Projects() {
             </div>
           </div>
         </section>
+        <section className="flex justify-center pb-10 px-4 text-center">
+          <div className="bg-black text-white  shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <img src={Instrumasters} className="w-full h-auto max-w-7xl rounded-t-md" alt="Instrumasters" />
 
+            <div className="p-5 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-b-md">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight dark:text-white">
+                Instrumasters (In Progress)
+              </h5>
+
+            
+              <a
+                href="https://instrumasters.com"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-md text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text"
+              >
+                Live Demo
+                <svg
+                  aria-hidden="true"
+                  className="w-4 h-4 ml-2 -mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+              <div className="px-6 py-4">
+                <span className="inline-block bg-gray-100 rounded-md px-3 py-1 text-sm font-semibold text-gray-600 mr-2">
+                  wordpress
+                </span>
+
+                <span className="inline-block bg-gray-100 rounded-md px-3 py-1 text-sm font-semibold text-gray-600 mr-2">
+elementor                </span>
+<span className="inline-block bg-gray-100 rounded-md px-3 py-1 text-sm font-semibold text-gray-600">
+css                </span>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="flex justify-center pb-10 px-4 text-center">
           <div className="bg-black text-white  shadow-md dark:bg-gray-800 dark:border-gray-700">
             <img src={Sharp} className="w-full h-auto max-w-7xl rounded-t-md" alt="Sharp" />
@@ -258,7 +302,7 @@ export default function Projects() {
                 href="https://www.github.com/jwinbush/suits2023"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="inline-flex items-center px-3 py-2 mr-2 text-sm font-medium text-center rounded-md text-black bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text"
+                className="inline-flex items-center px-3 py-2 mr-2 text-sm font-medium text-center rounded-md text-white bg-gradient-to-br from-black to-gray-600 shadow-lg hover:shadow-gray-600/60 animate-text"
               >
                 Repository
               </a>
@@ -266,7 +310,7 @@ export default function Projects() {
                 href="https://sharpwear.vercel.app"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-md text-black bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text"
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-md text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text"
               >
                 Live Demo
                 <svg

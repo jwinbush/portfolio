@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import car from "../assets/images/OdysseyScreenshot.png";
-import movie from "../assets/images/CinefilmScreenshot.png";
+import instrumasters from "../assets/images/Instrumaster.png";
 import EchoChat from "../assets/images/EchoChat.png";
 import { motion as m } from "framer-motion";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
@@ -106,29 +106,29 @@ export default function Home() {
           <span class="flex-shrink mx-4 text-white sm:text-center">
             {" "}
             Here are some of my recent works. This month I have focused
-            primarily on building full-stack applications.{" "}
+            primarily on building full-stack web applications.
           </span>
           <div class="flex-grow border-t border-gray-700"></div>
         </div>
         <p className="mb-8 lg:mb-16 font-light text-center text-white dark:text-gray-400 sm:text-xl"></p>
         <div className="grid lg:grid-cols-3 px-2 gap-2 text-center">
           <div data-te-ripple-init>
-            <img src={movie} alt="Movie" className="rounded-t-md" />
+            <img src={instrumasters} alt="instrumasters" className="rounded-t-md" />
             <div className="p-5 bg-gray-800/40 shadow-lg rounded-b-md">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
-                CineFilms
+                Instrumasters (In progress)
               </h5>
 
-              <a
+              {/* <a
                 href="https://github.com/jwinbush/movie"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="inline-flex items-center px-3 py-2 mr-2 text-center rounded-md text-white bg-gradient-to-br from-black to-gray-600 shadow-lg hover:shadow-gray-600/60 animate-text"
               >
                 Repository
-              </a>
+              </a> */}
               <a
-                href="https://cinefilm.vercel.app"
+                href="https://instrumasters.com"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="inline-flex items-center px-3 py-2 font-medium text-center rounded-md text-white bg-gradient-to-br from-orange-500 to-red-500 hover:bg-gradient-to-br shadow-lg hover:shadow-red-400/50 animate-text"
@@ -150,13 +150,13 @@ export default function Home() {
               </a>
               <div className="px-6 py-4">
                 <span className="inline-block bg-gray-100 rounded-md px-3 py-1 text-sm font-semibold text-gray-600 mr-2">
-                  react
+                  wordpress
                 </span>
                 <span className="inline-block bg-gray-100 rounded-md px-3 py-1 text-sm font-semibold text-gray-600 mr-2">
-                  scss
+                  elementor
                 </span>
                 <span className="inline-block bg-gray-100 rounded-md px-3 py-1 text-sm font-semibold text-gray-600">
-                  api
+                  css
                 </span>
               </div>
             </div>
