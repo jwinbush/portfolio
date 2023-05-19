@@ -95,6 +95,7 @@ export default function Projects() {
                   className="w-full h-auto max-w-7xl rounded-t-md"
                   src={imageFile}
                   alt="img"
+                  loading="lazy"
                 />
                 <div className="p-5 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-b-md">
                   <div className=" flex justify-center">
@@ -195,6 +196,7 @@ export default function Projects() {
               src={Portfolio}
               className="w-full h-auto max-w-7xl rounded-t-md"
               alt="Sharp"
+              loading="lazy"
             />
 
             <div className="p-5 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-b-md">
@@ -247,7 +249,7 @@ export default function Projects() {
         </section>
         <section className="flex justify-center pb-10 px-4 text-center">
           <div className="bg-black text-white  shadow-md dark:bg-gray-800 dark:border-gray-700">
-            <img src={Instrumasters} className="w-full h-auto max-w-7xl rounded-t-md" alt="Instrumasters" />
+            <img src={Instrumasters} className="w-full h-auto max-w-7xl rounded-t-md" alt="Instrumasters" loading="lazy" />
 
             <div className="p-5 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-b-md">
               <h5 className="mb-2 text-2xl font-bold tracking-tight dark:text-white">
@@ -291,7 +293,7 @@ css                </span>
         </section>
         <section className="flex justify-center pb-10 px-4 text-center">
           <div className="bg-black text-white  shadow-md dark:bg-gray-800 dark:border-gray-700">
-            <img src={Sharp} className="w-full h-auto max-w-7xl rounded-t-md" alt="Sharp" />
+            <img src={Sharp} className="w-full h-auto max-w-7xl rounded-t-md" alt="Sharp" loading="lazy" />
 
             <div className="p-5 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-b-md">
               <h5 className="mb-2 text-2xl font-bold tracking-tight dark:text-white">

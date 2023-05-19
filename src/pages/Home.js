@@ -113,7 +113,7 @@ export default function Home() {
         <p className="mb-8 lg:mb-16 font-light text-center text-white dark:text-gray-400 sm:text-xl"></p>
         <div className="grid lg:grid-cols-3 px-2 gap-2 text-center">
           <div data-te-ripple-init>
-            <img src={cinefilm} alt="cinefilms" className="rounded-t-md" />
+            <img src={cinefilm} alt="cinefilms" className="rounded-t-md" loading="lazy" />
             <div className="p-5 bg-gray-800/40 shadow-lg rounded-b-md">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
                 Cine Films
@@ -163,7 +163,7 @@ export default function Home() {
           </div>
 
           <div data-te-ripple-init>
-            <img src={car} alt="Car" className="rounded-t-md" />
+            <img src={car} alt="Car" className="rounded-t-md" loading="lazy" />
             <div className="p-5 bg-gray-800/40 shadow-lg rounded-b-md">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
                 Odyssey Rentals
@@ -211,7 +211,7 @@ export default function Home() {
             </div>
           </div>
           <div data-te-ripple-init>
-            <img src={EchoChat} alt="Spotify" className="rounded-t-md" />
+            <img src={EchoChat} alt="Spotify" className="rounded-t-md" loading="lazy" />
             <div className="p-5 bg-gray-800/40 shadow-lg rounded-b-md">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
                 Echo Chat
