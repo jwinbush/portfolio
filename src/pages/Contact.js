@@ -52,6 +52,7 @@ const ContactForm = () => {
               className="cursor-pointer lg:w-20 lg:h-20 w-16 h-16"
               src={linkedin}
               alt=""
+              loading="lazy"
             />
           </Link>
           <Link to="https://github.com/jwinbush" target="_blank">
@@ -59,6 +60,7 @@ const ContactForm = () => {
               className="cursor-pointer lg:w-20 lg:h-20 w-16 h-16"
               src={github}
               alt=""
+              loading="lazy"
             />
           </Link>
           <Link to="tel:3176544324" target="_blank">
@@ -66,6 +68,7 @@ const ContactForm = () => {
               className="cursor-pointer lg:w-20 lg:h-20 w-16 h-16"
               src={phone}
               alt=""
+              loading="lazy"
             />
           </Link>
         </div>
