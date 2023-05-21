@@ -49,11 +49,10 @@ export default function Home() {
                   className="bg-gradient-to-r bg-clip-text 
               from-orange-500 via-red-500 to-orange-400 font-bold"
                 >
-                  Full Stack Developer
-                </span>{" "}
+                Web Developer {" "}
+                </span>
                 who brings a creative and solution driven mindset to every team
-                and project. I have a strong passion for both frontend and backend development, 
-                as well as the intricate aspects of human-computer interactions. 
+                and project. I have a strong passion for both frontend and backend development.
                 My interests span across the entire development spectrum, 
                 allowing me to contribute effectively in various areas of a project.
               </p>
