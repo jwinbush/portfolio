@@ -8,6 +8,12 @@ import { Video } from "../components/video/Video";
 
 
 export default function Home() {
+
+  const RefreshButton = () => {
+    window.location.href = "/portfolio";
+    // Call window.location.reload() to refresh the page
+  };
+
   return (
     <div>
       {/* HERO SECTION */}
@@ -242,6 +248,7 @@ export default function Home() {
           <div>
             <Link
               to="/portfolio"
+              onClick={RefreshButton}
               className="mt-10 inline-flex  items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-md text-white bg-gradient-to-br from-orange-500 via-red-500 to-orange-500 hover:bg-gradient-to-br shadow-lg hover:shadow-red-400/50"
             >
               All Projects
