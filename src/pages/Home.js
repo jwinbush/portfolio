@@ -35,6 +35,7 @@ export default function Home() {
                 id="myVideo1"
                 alt="sphere"
                 autoplay
+                muted
                 loop
               />
             </m.div>
