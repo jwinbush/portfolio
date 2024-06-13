@@ -48,7 +48,7 @@ export default function Home() {
               from-orange-500 via-red-500 to-orange-400
               animate-text"
               >
-                Jay Winbush<span className="text-white">.</span>
+                Jawon Winbush<span className="text-white">.</span>
               </h1>
               <p className="max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl">
                 I'm a{" "}

@@ -62,22 +62,26 @@ export default function About() {
               variants={textVariant(0.6)}
               className="flex max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl"
             >
-              I am an aspiring architect turned full stack developer, driven by a 
-              deep passion for both the art of design and the intricacies of software 
-              development. With a solid foundation in architecture, I bring a unique 
-              perspective to the world of programming, combining creativity and 
-              technical expertise in my work.
+              Hello there! I'm Jawon. I started out wanting to be an architect,
+              dreaming of designing cool buildings. But then I stumbled into the
+              world of web development and got hooked. Turns out, designing
+              websites and designing buildings have a lot in common – both need
+              a solid structure, a great look, and a good user experience. I
+              studied at Ivy Tech and Indiana University (IUI), where I got a
+              mix of both worlds.
             </m.p>
 
             <m.p
               variants={textVariant(0.6)}
               className="flex max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-2xl"
             >
-              Having transitioned into the realm of technology, I have embraced the
-              challenges and opportunities that come with being a full stack 
-              developer. My architectural background has instilled in me a 
-              meticulous attention to detail, a strong problem-solving ability, 
-              and an appreciation for aesthetic design.
+              I kicked off my career as an intern at Well Done Marketing and
+              later worked there as a Junior Web Developer. Our intern team even
+              snagged a Gold ADDY Award – talk about a great start! My time
+              there taught me the importance of teamwork and creativity. Now, I
+              love turning ideas into reality with code. Thanks for stopping by
+              my site, and let's connect – who knows, maybe we'll build
+              something awesome together!
             </m.p>
 
             <button

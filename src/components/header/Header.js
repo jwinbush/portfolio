@@ -1,7 +1,7 @@
 import "./header.css";
 import React, { useEffect, useRef, useState } from "react";
 import { FaGithub } from "react-icons/fa";
-
+import logo from "../../assets/images/logos/logo15.png";
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -34,9 +34,7 @@ export default function Header() {
         document.documentElement.scrollTop > 100
       ) {
         headerRef.current.classList.add("shrink");
-      } else {
-        headerRef.current.classList.remove("shrink");
-      }
+      } 
     };
     window.addEventListener("scroll", shrinkHeader);
     return () => {
@@ -63,14 +61,12 @@ export default function Header() {
       {/* <div id="gradient" className="py-[0.3rem] fixed w-full z-[1000]"></div> */}
       <nav
         ref={headerRef}
-        className="flex items-center lg:px-6 py-3 justify-between flex-wrap mx-auto bg-transparent fixed w-full z-[100] shadow"
+        className="flex items-center lg:px-6 py-3 justify-between flex-wrap mx-auto bg-black fixed w-full z-[100] shadow"
       >
         <div className="flex items-center flex-shrink-0 text-white mx-6">
           <span className="font-semibold text-xl tracking-tight">
             <Link to="/" className="flex items-center">
-              <h1 className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white" >
-                Winbush.
-              </h1>
+              <img className="w-[80px]" src={logo} alt="" />
               
             </Link>
           </span>
@@ -132,7 +128,7 @@ export default function Header() {
             isOpen ? "" : "hidden"
           } w-full block flex-grow lg:flex lg:items-center lg:w-auto text-center backdrop-filter backdrop-blur-lg z-[50000] h-screen lg:h-auto`}
         >
-          <div className="pt-[45%] lg:pt-0 text-2xl lg:text-sm lg:flex-grow font-bold lg:font-normal">
+          <div className="pt-[45%] lg:pt-0 text-2xl lg:text-sm lg:flex-grow font-bold">
             <Link
               to="/"
               onClick={RefreshClickHome}

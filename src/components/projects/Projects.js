@@ -1,6 +1,6 @@
 import cineFilms from "../../assets/images/CinefilmScreenshot.png";
 import Odyssey from "../../assets/images/OdysseyScreenshot.png";
-import Instrumasters from "../../assets/images/Instrumaster.png";
+import NaAlterations from "../../assets/images/NaAlterations.png";
 import Spotify from "../../assets/images/SpotifyScreenshot.png";
 import Sharp from "../../assets/images/Sharp.png";
 import EchoChat from "../../assets/images/EchoChat.png";
@@ -590,14 +590,21 @@ export default function Projects() {
                       <div className="bg-white rounded-lg p-8 max-w-3xl">
                         <h1 className="text-xl mb-4">Description</h1>
                         <p>
-                          Echo Chat is a social media website built on the MERN (MongoDB, Express.js, React, Node.js) stack.
-                          Echo Chat provides a seamless social networking experience.
-                          The registration system allows users to create personalized accounts, securely storing their information in MongoDB. 
-                          Users can then connect and engage with others through the social media post system, where they can share thoughts, 
-                          images, and videos, fostering meaningful interactions and vibrant conversations. The follow and unfollow system empowers
-                          users to curate their network, staying connected with friends, influencers, and communities that resonate with their 
-                          interests. With its modern design and responsive layout, 
-                          Echo Chat offers an aesthetically pleasing and intuitive user experience across devices. 
+                          Echo Chat is a social media website built on the MERN
+                          (MongoDB, Express.js, React, Node.js) stack. Echo Chat
+                          provides a seamless social networking experience. The
+                          registration system allows users to create
+                          personalized accounts, securely storing their
+                          information in MongoDB. Users can then connect and
+                          engage with others through the social media post
+                          system, where they can share thoughts, images, and
+                          videos, fostering meaningful interactions and vibrant
+                          conversations. The follow and unfollow system empowers
+                          users to curate their network, staying connected with
+                          friends, influencers, and communities that resonate
+                          with their interests. With its modern design and
+                          responsive layout, Echo Chat offers an aesthetically
+                          pleasing and intuitive user experience across devices.
                         </p>
 
                         <button
@@ -683,14 +690,22 @@ export default function Projects() {
                       <div className="bg-white rounded-lg p-8 max-w-3xl">
                         <h1 className="text-xl mb-4">Description</h1>
                         <p>
-                        Sharp Wear is a ecommerce website that showcases the perfect blend of style and functionality. 
-                        Developed using React and styled with Tailwind CSS. The React components ensure smooth navigation and interactivity, allowing customers 
-                        to effortlessly explore a wide range of trendy clothing and accessories. Tailwind CSS enhances the overall 
-                        aesthetic appeal, providing a clean and visually stunning layout that complements the products on display.
-                        Sharp Wear's intuitive search and filtering options make it easy for shoppers to find exactly what they're 
-                        looking for, while secure payment gateways ensure a safe and convenient checkout process. Whether it's
-                        trendy fashion or timeless classics, Sharp Wear is the go-to destination for individuals
-                        seeking high-quality suits with a touch of sophistication.
+                          Sharp Wear is a ecommerce website that showcases the
+                          perfect blend of style and functionality. Developed
+                          using React and styled with Tailwind CSS. The React
+                          components ensure smooth navigation and interactivity,
+                          allowing customers to effortlessly explore a wide
+                          range of trendy clothing and accessories. Tailwind CSS
+                          enhances the overall aesthetic appeal, providing a
+                          clean and visually stunning layout that complements
+                          the products on display. Sharp Wear's intuitive search
+                          and filtering options make it easy for shoppers to
+                          find exactly what they're looking for, while secure
+                          payment gateways ensure a safe and convenient checkout
+                          process. Whether it's trendy fashion or timeless
+                          classics, Sharp Wear is the go-to destination for
+                          individuals seeking high-quality suits with a touch of
+                          sophistication.
                         </p>
                         <button
                           className="mt-4 text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text font-bold py-2 px-4 rounded"
@@ -748,7 +763,7 @@ export default function Projects() {
         <section className="flex justify-center pb-10 px-4 text-center">
           <div className="bg-black text-white  shadow-md dark:bg-gray-800 dark:border-gray-700">
             <img
-              src={Instrumasters}
+              src={NaAlterations}
               className="w-full h-auto max-w-7xl rounded-t-md"
               alt="Sharp"
               loading="lazy"
@@ -757,7 +772,7 @@ export default function Projects() {
             <div className="p-5 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-b-md">
               <div className="flex justify-center">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight dark:text-white">
-                  Instrumasters - (In Progress)
+                  NA's Alterations - (In Progress)
                 </h5>
                 {
                   <Tooltip
@@ -793,11 +808,19 @@ export default function Projects() {
                       <div className="bg-white rounded-lg p-8 max-w-3xl">
                         <h1 className="text-xl mb-4">Description</h1>
                         <p>
-                        Instrumasters is a user-friendly instrument course website built with
-                        WordPress, Elementor, and PHP. Designed to cater to music enthusiasts of all levels, Instrumasters offers a wide 
-                        range of courses to help individuals master various musical instruments.Instrumasters is the ultimate destination for aspiring musicians, offering a 
-                        harmonious blend of WordPress's content management system, Elementor's design capabilities, and the
-                        power of PHP to provide an unparalleled online learning experience in the world of music.
+                          NA Express Alterations is a WordPress and
+                          Elementor-built freelance website for a business
+                          offering dry cleaning, clothing repairs, and
+                          alterations. The site features a modern design with
+                          vibrant colors, a user-friendly navigation bar, and
+                          detailed service pages. It includes an online booking
+                          system, a responsive layout for all devices, and a
+                          contact page with essential information. The website
+                          also has a blog for clothing care tips and customer
+                          testimonials to build trust. Social media links are
+                          provided for broader engagement. The platform allows
+                          easy updates and maintenance to keep the site current
+                          and functional.
                         </p>
 
                         <button
@@ -813,7 +836,7 @@ export default function Projects() {
               }
 
               <a
-                href="https://instrumasters.com"
+                href="https://www.naalterations.com"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-md text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text"
